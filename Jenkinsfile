@@ -11,7 +11,7 @@ pipeline{
       }
     }
     stage("Checkout from SCM") {
-      steos {
+      steps {
         git branch: 'main', credentialsId: 'github', url: 'https://github.com/acodenil/register-app'
       }
     }
